@@ -2,7 +2,6 @@
 
 ## Overview 
 
-Explain the purpose of this analysis.
 
 The goal of this project is to develop a machine learning algorithm, specifically a binary classifier using neural networks, to predict the likelihood of success for applicants if funded by the fictional non-profit foundation, Alphabet Soup. Alphabet Soup aims to leverage data-driven approaches to select applicants with the highest potential for success in their ventures. By utilizing historical data and relevant features, the algorithm will classify applicants into two categories: successful and unsuccessful.
 
