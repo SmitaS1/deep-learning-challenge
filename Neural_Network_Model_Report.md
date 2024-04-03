@@ -9,20 +9,18 @@ The goal of this project is to develop a machine learning algorithm, specificall
 
 ### Data Preprocessing
 
-What variable(s) are the target(s) for your model?
-
+1. What variable(s) are the target(s) for your model?
 In this code snippet, the target variable for the model is IS_SUCCESSFUL, which is extracted from the df_dummies DataFrame and stored in the variable y. Therefore, IS_SUCCESSFUL is the target variable for the model.
 
-What variable(s) are the feature(s) for your model?
-
+2. What variable(s) are the feature(s) for your model?
 The features for the model are all the columns in the df_dummies DataFrame except for the target variable IS_SUCCESSFUL. These features are stored in the variable X. Therefore, the features for the model include all columns of df_dummies except IS_SUCCESSFUL.
 
 
-What variable(s) should be removed from the input data because they are neither targets nor features?
+3. What variable(s) should be removed from the input data because they are neither targets nor features?
 Dropped EIN and NAME non-beneficial columns.
 
 
-Choosing a cutoff point count of  528 for APPLICATION_TYPE and 1883 count FOR CLASSIFICATIONto bin rare categorical values together into a new value called "Other",
+4. Choosing a cutoff point count of  528 for APPLICATION_TYPE and 1883 count FOR CLASSIFICATIONto bin rare categorical values together into a new value called "Other",
 using pd.get_dummies() to convert categorical data to numeric,
 dividing the data into a target array (IS_SUCCESSFUL) and features arrays,
 applying the train_test_split to create a testing and a training dataset,
@@ -31,7 +29,8 @@ and finally, using StandardScaler to scale the training and testing sets
  
 Compiling, Training, and Evaluating the Model
 
-The model was required to achieve a target predictive accuracy higher than 75%. I made four official attempts using machine learning and neural networks. They all resulted in the same accuracy rate – right around 73%, so a little short of the required target accuracy.
+5.  The model was required to achieve a target predictive accuracy higher than 75%. I made four official attempts using machine learning and neural networks. 
+They all resulted in the same accuracy rate – right around 73%, so a little short of the required target accuracy.
 
 Results from each model attempt are detailed below:
 
@@ -75,7 +74,7 @@ epochs = 100
 Loss: 0.5565226078033447, Accuracy: 0.7258309125900269
 
 
-What steps did you take in your attempts to increase model performance?
+6. What steps did you take in your attempts to increase model performance?
 I added more layers, modify the number of nurons, switched up the activation functions associated with each layer in an attempt to achieve higher model accuracy.
 
 ## Summary of Deep Learning Model Results:
@@ -106,7 +105,6 @@ Considering the limitations encountered with deep learning models, a recommendat
 Explanation of Recommendation:
 
 Random Forest:
-
 Random Forest is an ensemble learning method that aggregates predictions from multiple decision trees.
 It is robust against overfitting and can handle high-dimensional data well.
 Random Forest provides feature importance rankings, aiding in understanding the factors contributing to success.
