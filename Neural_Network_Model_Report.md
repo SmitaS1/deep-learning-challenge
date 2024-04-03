@@ -1,4 +1,4 @@
-The performance of the deep learning model for Alphabet Soup.
+# The performance of the deep learning model for Alphabet Soup.
 
 ## Overview 
 
@@ -76,6 +76,9 @@ epochs = 100
 Loss: 0.5565226078033447, Accuracy: 0.7258309125900269
 
 
+What steps did you take in your attempts to increase model performance?
+I added more layers, modify the number of nurons, switched up the activation functions associated with each layer in an attempt to achieve higher model accuracy.
+
 ## Summary of Deep Learning Model Results:
 
 The deep learning models attempted to predict the success of applicants if funded by Alphabet Soup, aiming for a target predictive accuracy exceeding 75%. However, all four official attempts using various neural network architectures and hyperparameters resulted in consistent accuracy rates around 73%, falling short of the desired threshold.
@@ -116,3 +119,16 @@ It is less prone to overfitting compared to deep neural networks.
 GBM effectively captures complex relationships in data and iteratively improves predictive performance.
 By focusing on areas where previous models failed, GBM may provide better predictive accuracy for this classification problem.
 By exploring these alternative models, we can leverage their strengths in handling complex data relationships, reducing overfitting, and providing interpretability, potentially leading to improved predictive accuracy for determining the success of applicants if funded by Alphabet Soup.
+
+
+## Note: AlphabetSoupCharity_Optimization 
+In this file I have used steps to increase model performance to predict accuracy exceed 75%
+
+I added column 'NAME', added more layers, modify the number of nurons, switched up the activation functions associated with each layer in an attempt to achieve higher model accuracy.
+ 
+layers = 3
+hidden_nodes_layer1 = 10
+hidden_nodes_layer2 = 8
+hidden_nodes_layer3= 6
+epochs = 30
+Loss: 0.4892241656780243, Accuracy: 0.7560349702835083
